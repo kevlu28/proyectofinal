@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PrimeFit Nutrition</title> 
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body class="bg-gray-100 text-gray-800">
+    <header class="py-6 bg-white shadow">
+        <div class="container mx-auto flex justify-center">
+            <img src="img/logo.png" alt="PrimeFit Nutrition" class="h-12"> 
+        </div>
+    </header>
+    <header class="bg-green-600 text-white p-4 flex justify-between items-center fade-in">
+        <h1 class="text-2xl font-bold">PRIMEFIT NUTRITION</h1>
+        <nav class="nav-bar">
+            <ul class="flex space-x-4">
+                <li><a href="#inicio" class="hover:text-yellow-300">Inicio</a></li>
+                <li><a href="#productos" class="hover:text-yellow-300">Productos</a></li>
+                <li><a href="consejos.html" class="hover:text-yellow-300">Consejos</a></li>
+                <li><a href="#contacto" class="hover:text-yellow-300">Contáctame</a></li>
+            </ul>
+        </nav>
+        <div class="flex space-x-4">
+            <a href="login.html" class="flex items-center hover:text-yellow-300">
+                Iniciar Sesión
+            </a>
+            <a href="register.html" class="flex items-center hover:text-yellow-300">
+                Registrarse
+            </a>
+        </div>
+        
+    </header>
+
+    <!-- Sección de objetivos -->
+    <section id="objetivos" class="py-10 bg-white fade-in">
+        <div class="container mx-auto">
+            <h2 class="text-3xl font-bold text-center mb-6">Selecciona Tu Objetivo</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
+                <div class="bg-gray-200 p-4 rounded-lg text-center hover:bg-green-200 objetivo">
+                    <img src="img/ganar musculo.jpg" alt="Ganancia Muscular" class="w-full h-32 object-cover rounded-t-lg mb-4">
+                    <h3 class="text-xl font-semibold mb-2">Ganancia Muscular</h3>
+                    <a href="#productos" class="text-green-600 font-medium hover:underline">Ver Productos</a>
+                </div>
+                <div class="bg-gray-200 p-4 rounded-lg text-center hover:bg-green-200 objetivo">
+                    <img src="img/mas energia.jpg" alt="Más Energía" class="w-full h-32 object-cover rounded-t-lg mb-4">
+                    <h3 class="text-xl font-semibold mb-2">Más Energía</h3>
+                    <a href="#productos" class="text-green-600 font-medium hover:underline">Ver Productos</a>
+                </div>
+                <div class="bg-gray-200 p-4 rounded-lg text-center hover:bg-green-200 objetivo">
+                    <img src="img/resistencia.jpg" alt="Resistencia y Recuperación" class="w-full h-32 object-cover rounded-t-lg mb-4">
+                    <h3 class="text-xl font-semibold mb-2">Resistencia y Recuperación</h3>
+                    <a href="#productos" class="text-green-600 font-medium hover:underline">Ver Productos</a>
+                </div>
+                <div class="bg-gray-200 p-4 rounded-lg text-center hover:bg-green-200 objetivo">
+                    <img src="img/tonificacion.jpg" alt="Control de Peso y Tonificación" class="w-full h-32 object-cover rounded-t-lg mb-4">
+                    <h3 class="text-xl font-semibold mb-2">Control de Peso y Tonificación</h3>
+                    <a href="#productos" class="text-green-600 font-medium hover:underline">Ver Productos</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+
+    <!-- Sección de productos -->
+    <section id="productos" class="py-10 bg-gray-50 fade-in">
+        <div class="container mx-auto">
+            <h2 class="text-3xl font-bold text-center mb-6">Nuestros Productos</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <div class="bg-white p-4 shadow rounded-lg producto">
+                    <img src="img/goldstadarWHEY.jpg" alt="Gold Standard 100% Whey" class="w-full h-40 object-cover rounded-t-lg">
+                    <h3 class="text-xl font-semibold mt-4">Gold Standard 100% Whey</h3>
+                    <p class="mt-2 text-green-700 font-bold">S/ 269</p>
+                </div>
+                <div class="bg-white p-4 shadow rounded-lg producto">
+                    <img src="img/seriousMASS.jpg" alt="Serious Mass (ON)" class="w-full h-40 object-cover rounded-t-lg">
+                    <h3 class="text-xl font-semibold mt-4">Serious Mass (ON)</h3>
+                    <p class="mt-2 text-green-700 font-bold">S/ 229</p>
+                </div>
+                <div class="bg-white p-4 shadow rounded-lg producto">
+                    <img src="img/ISO-XP.jpg" alt="ISO-XP" class="w-full h-40 object-cover rounded-t-lg">
+                    <h3 class="text-xl font-semibold mt-4">ISO-XP</h3>
+                    <p class="mt-2 text-green-700 font-bold">S/ 339</p>
+                </div>
+                <div class="bg-white p-4 shadow rounded-lg producto">
+                    <img src="img/anabolicMASS.jpg" alt="Anabolic Mass" class="w-full h-40 object-cover rounded-t-lg">
+                    <h3 class="text-xl font-semibold mt-4">Anabolic Mass</h3>
+                    <p class="mt-2 text-green-700 font-bold">S/ 239</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+
+    <!-- Formulario de contacto -->
+    <section id="contacto" class="py-10 bg-white fade-in">
+        <div class="container mx-auto">
+            <h2 class="text-3xl font-bold text-center mb-6">Contáctanos</h2>
+            <form id="contactForm" class="max-w-lg mx-auto bg-gray-50 p-6 rounded-lg shadow">
+                <label for="name" class="block mb-2">Nombre y Apellido:</label>
+                <input type="text" id="name" name="name" class="w-full p-2 mb-4 border rounded-lg" required>
+                <label for="phone" class="block mb-2">Celular:</label>
+                <input type="text" id="phone" name="phone" class="w-full p-2 mb-4 border rounded-lg" required>
+                <label for="email" class="block mb-2">Correo Electrónico:</label>
+                <input type="email" id="email" name="email" class="w-full p-2 mb-4 border rounded-lg" required>
+                <button type="submit" class="w-full bg-green-600 text-white p-2 rounded-lg hover:bg-green-700">Enviar</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-green-600 text-white text-center p-4">
+        <p>&copy; 2024 | PrimeFit Nutrition | Todos los derechos reservados</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

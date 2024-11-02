@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Catálogo Dinámico</title>
+   <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+   <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+
+    <header class="bg-green-600 text-white p-4 flex justify-between items-center fade-in">
+        <h1 class="text-2xl font-bold">PRIMEFIT NUTRITION</h1>
+        <nav class="nav-bar">
+            <ul class="flex space-x-4">
+                <li><a href="#inicio" class="hover:text-yellow-300">Inicio</a></li>
+                <li><a href="#productos" class="hover:text-yellow-300">Productos</a></li>
+                <li><a href="consejos.html" class="hover:text-yellow-300">Consejos</a></li>
+                <li><a href="#contacto" class="hover:text-yellow-300">Contáctame</a></li>
+            </ul>
+        </nav>
+        <div class="flex space-x-4">
+            <a href="login.html" class="flex items-center hover:text-yellow-300">
+                <img src="assets/icono-login.svg" alt="Inicio de Sesión" class="w-5 h-5 mr-1"> Iniciar Sesión
+            </a>
+            <a href="register.html" class="flex items-center hover:text-yellow-300">
+                <img src="assets/icono-registro.svg" alt="Registro" class="w-5 h-5 mr-1"> Registrarse
+            </a>
+        </div>
+    </header>
+
+    <div id="filtroOrdenacion">
+        <input type="text" id="busqueda" placeholder="Buscar producto..." oninput="buscarProducto()">
+        <select id="filtroCategoria" onchange="filtrarProductos()">
+           <option value="">Todas las Categorías</option>
+           <option value="Electrónica">Electrónica</option>
+           <option value="Hogar">Hogar</option>
+        </select>
+        <input type="number" id="precioMin" placeholder="Precio Mín" oninput="filtrarProductos()">
+        <input type="number" id="precioMax" placeholder="Precio Máx" oninput="filtrarProductos()">
+        <select id="ordenarPor" onchange="ordenarProductos()">
+           <option value="nombre">Nombre</option>
+           <option value="precio">Precio</option>
+        </select>
+     </div>
+     
+     <div id="catalogo"></div>
+     <div id="paginacion"></div>
+     
+     <div id="modal" class="modal">
+        <div class="modal-content">
+           <span onclick="cerrarModal()" class="close">&times;</span>
+           <div id="modalDetalles"></div>
+        </div>
+     </div>
+     
+
+   <script src="catalogo.js"></script>
+</body>
+</html>

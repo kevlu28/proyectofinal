@@ -1,0 +1,21 @@
+[
+    {
+       "id": 1,
+       "nombre": "Producto A",
+       "precio": 50,
+       "descripcion": "Descripción detallada del producto A",
+       "imagen": "ruta/a/imagenA.jpg",
+       "categoria": "Electrónica",
+       "disponibilidad": "En Stock"
+    },
+    {
+       "id": 2,
+       "nombre": "Producto B",
+       "precio": 30,
+       "descripcion": "Descripción detallada del producto B",
+       "imagen": "ruta/a/imagenB.jpg",
+       "categoria": "Hogar",
+       "disponibilidad": "Agotado"
+    }
+ ]
+ 
